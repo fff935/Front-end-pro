@@ -1,0 +1,38 @@
+<script>
+    // Створюємо змінні всіх типів даних
+    let stringType = "Hello, World!";
+    let numberType = 42;
+    let booleanType = true;
+    let undefinedType;
+    let nullType = null;
+    let symbolType = Symbol("symbol");
+    // Виводимо типи даних у консоль
+    console.log("stringType:", typeof stringType);
+    console.log("numberType:", typeof numberType);
+    console.log("booleanType:", typeof booleanType);
+    console.log("undefinedType:", typeof undefinedType);
+    console.log("nullType:", typeof nullType);
+    console.log("symbolType:", typeof symbolType); 
+</script>
+
+
+<script>
+
+    const firstString = prompt("Введіть перший рядок:");
+    const secondString = prompt("Введіть другий рядок:");
+    const thirdString = prompt("Введіть третій рядок:");
+
+    const strings = [firstString, secondString, thirdString];
+
+    const shuffledStrings = strings.sort(() => Math.random() - 0.5);
+
+    console.log(`Рядки у довільному порядку: ${shuffledStrings[0]}, ${shuffledStrings[1]}, ${shuffledStrings[2]}`);
+
+</script>
+
+<script>
+    const number = prompt("Введіть ваше число:");
+
+    const digits = number.split('').join(' ');
+    console.log(digits);
+</script>
