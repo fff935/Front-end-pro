@@ -1,17 +1,17 @@
 const year = 2024;
-let birthYear = prompt("Enter your year of birth: ");
+const birthYear = prompt("Enter your year of birth: ");
 if (birthYear === null) {
     alert("Шкода, що Ви не захотіли ввести свою дату народження.");
 }
 else {
-    let town = prompt("Enter your town: ");
+    const town = prompt("Enter your town: ");
     if (town === null) {
         alert("Шкода, що Ви не захотіли ввести своє місто.");
     } else {
         let country;
         let captital = false;
         let inCaptital;
-        let favSport = prompt("Enter your favorite kind of sport: ");
+        const favSport = prompt("Enter your favorite kind of sport: ");
         if (favSport === null) {
             alert("Шкода, що Ви не захотіли ввести свій улюблений вид спорту.");
         }
