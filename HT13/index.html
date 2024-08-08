@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HT11</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modal-background"></div>
+    <div class="modal">
+      <form id="contactForm" class="modal-content">
+        <div class="header">
+          <h1 class="main-text">We would like to help you</h1>
+          <button type="button" class="close-button">
+            <img class="close-button-img" src="./images/close.png" alt=".." />
+          </button>
+        </div>
+        <div class="main">
+          <div class="name-massage">
+            <div>
+              <input id="name" class="input-name placeholder-style input-style" type="text" placeholder="Name" />
+              <div id="nameError" class="error"></div>
+            </div>
+            <div>
+              <textarea id="message" class="message-input placeholder-style" placeholder="Message"></textarea>
+              <div id="messageError" class="error"></div>
+            </div>
+          </div>
+          <div class="contact-info">
+            <h2 class="how-to">How to answer you?</h2>
+            <div class="phone-mail">
+              <input id="phone" class="phone-number placeholder-style input-style" type="tel" placeholder="Phone number" />
+              <div id="phoneError" class="error"></div>
+              <input id="email" class="email placeholder-style input-style" type="email" placeholder="Email" />
+              <div id="emailError" class="error"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button class="finish-button" type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+    <script src="validation.js"></script>
+  </body>
+</html>
