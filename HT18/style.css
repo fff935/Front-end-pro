@@ -66,3 +66,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.bar{
+height: 5px;
+width: 250px;
+background-color: #df8703;
+border-radius: 2.5px;
+transition: width 0.5s ease; /* Плавна зміна ширини за 1 секунду */
+}
