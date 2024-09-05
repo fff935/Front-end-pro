@@ -1,8 +1,68 @@
-.timer div, .timer p {
-    display: inline;
+/* Стилі для контейнера */
+.container {
+  height: 100vh; /* Заповнює висоту вікна перегляду */
+  background-color: #1b1a1be5;
+  font-family: "SUSE", sans-serif; /* Шрифт 'SUSE' */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+p {
+  margin: 0 0;
+}
+
+.middle-container {
+  width: 300px;
+  height: 200px;
+  background-color: #1b1a1be5;
+  padding: 1.5rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* Стилі для заголовка */
+.title {
+  font-size: 2rem;
+  color: antiquewhite;
+}
+
+/* Стилі для таймера */
+.timer {
+  font-size: 3rem;
+  font-size: 50px;
+  color: antiquewhite;
+}
+
+.timer div,
+.timer p {
+  display: inline;
+  padding: 0 0.5rem;
+}
+
+.controls button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #df8703;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #885200; /* Темніший зелений при наведенні */
+}
+
+/* Заборона виділення тексту */
 body {
-    background-color: #c0aef3;
-    font-family: SUSE;
+  user-select: none;
+  margin: 0;
+  padding: 0;
 }
