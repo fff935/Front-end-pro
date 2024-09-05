@@ -19,11 +19,11 @@ let company = {
       for (let worker of department) {
         total += worker.salary;
       }
-    } else {
-      for (let subDepartment in department) {
-        total += calculateTotalSalary(department[subDepartment]);
-      }
-    }
+    // } else {
+    //   for (let subDepartment in department) {
+    //     total += calculateTotalSalary(department[subDepartment]);
+    //   }
+    // }
   
     return total;
   }

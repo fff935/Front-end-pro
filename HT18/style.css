@@ -1,15 +1,14 @@
-/* Стилі для контейнера */
 .container {
-  height: 100vh; /* Заповнює висоту вікна перегляду */
+  height: 100vh; /* Fill the viewport height */
   background-color: #1b1a1be5;
-  font-family: "SUSE", sans-serif; /* Шрифт 'SUSE' */
+  font-family: "SUSE", sans-serif; /* Font 'SUSE' */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 p {
-  margin: 0 0;
+  margin: 0;
 }
 
 .middle-container {
@@ -25,23 +24,40 @@ p {
   text-align: center;
 }
 
-/* Стилі для заголовка */
+/* Styles for the title */
 .title {
   font-size: 2rem;
   color: antiquewhite;
 }
 
-/* Стилі для таймера */
+/* Styles for the timer */
 .timer {
   font-size: 3rem;
-  font-size: 50px;
   color: antiquewhite;
+  display: flex;
+  align-items: center; /* Align items vertically center */
 }
 
-.timer div,
-.timer p {
-  display: inline;
-  padding: 0 0.5rem;
+.timer input {
+  width: 4rem; /* Adjust width to fit the design */
+  text-align: center;
+  font-size: 3rem;
+  color: antiquewhite;
+  background: none;
+  border: none;
+  outline: none;
+  margin: 0 0.5rem; /* Adjust spacing between inputs */
+}
+
+/* Remove spin buttons */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .controls button {
@@ -57,20 +73,21 @@ p {
 }
 
 .controls button:hover {
-  background-color: #885200; /* Темніший зелений при наведенні */
+  background-color: #885200; /* Darker color on hover */
 }
 
-/* Заборона виділення тексту */
+/* Prevent text selection */
 body {
   user-select: none;
   margin: 0;
   padding: 0;
 }
 
-.bar{
-height: 5px;
-width: 250px;
-background-color: #df8703;
-border-radius: 2.5px;
-transition: width 0.5s ease; /* Плавна зміна ширини за 1 секунду */
+.bar {
+  height: 5px;
+  width: 250px;
+  background-color: #df8703;
+  border-radius: 2.5px;
+  transition: width 0.5s ease; /* Smooth width transition */
 }
+
