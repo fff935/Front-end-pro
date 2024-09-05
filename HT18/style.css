@@ -1,0 +1,8 @@
+.timer div, .timer p {
+    display: inline;
+}
+
+body {
+    background-color: #c0aef3;
+    font-family: SUSE;
+}
