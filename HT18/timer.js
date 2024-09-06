@@ -9,15 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
     let secValue;
     let intervalId;
     let isRunning = false;
-    let initialTime; // Total initial time in seconds
-    let step; // Step for bar width change
-    let initialBarWidth = 250; // Initial width of the bar
+    let initialTime;
+    let step; 
+    let initialBarWidth = 250; 
   
     function formatNumber(number) {
       return number < 10 ? "0" + number : number;
     }
   
-    // Function to start or stop the timer
     function toggleTimer() {
       if (isRunning) {
         clearInterval(intervalId);
@@ -40,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
       isRunning = !isRunning;
     }
   
-    // Function to update the timer
     function updateTimer() {
       if (secValue === 0 && minValue === 0) {
         clearInterval(intervalId);
@@ -63,19 +61,19 @@ document.addEventListener("DOMContentLoaded", function () {
       updateBar();
     }
   
-    // Function to reset the timer
     function resetTimer() {
       clearInterval(intervalId);
-      minInput.value = "0";
-      secInput.value = "0";
-      bar.style.width = initialBarWidth + "px"; // Reset bar to initial width
+     minInput.value = "";
+      secInput.value = "";
+      minInput.placeholder = "00";
+      secInput.placeholder = "00";
+      bar.style.width = initialBarWidth + "px"; 
       isRunning = false;
       startStopButton.textContent = "Start";
       startStopButton.style.backgroundColor = "#df8703";
       startStopButton.disabled = false;
     }
   
-    // Function to update the progress bar
     function updateBar() {
       let currentWidth = parseFloat(bar.style.width) || initialBarWidth;
       currentWidth -= step;
