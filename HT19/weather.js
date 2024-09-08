@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
       wind.textContent = `Wind Speed: ${data.wind.speed} m/s`;
     }
   
-    // Додаємо подію на кнопку для оновлення даних
     const refreshButton = document.getElementById("refresh-button");
     refreshButton.addEventListener("click", function () {
         weatherGet(city);
