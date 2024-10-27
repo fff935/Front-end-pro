@@ -1,0 +1,24 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.buttons > div {
+  border: 1px solid rgb(226, 226, 226);
+  background-color: #5a5a5a;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.buttons > div:nth-child(2) {
+    margin-left: 5px;
+}
+
+
+.textContainer{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    height: 500px;
+    margin-top: 10px;
+}
