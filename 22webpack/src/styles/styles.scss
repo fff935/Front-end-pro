@@ -1,0 +1,23 @@
+$primary-color: rgb(119, 255, 0);
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-color;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  display: block;
+  margin: 50px auto;
+  padding: 10px 20px;
+  background-color: darken($primary-color, 15%);
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
