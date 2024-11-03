@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const EmojiVoting = () => {
-    // List of emojis with initial votes set to 0
+
     const [emojis, setEmojis] = useState([
         { id: 1, icon: "😃", votes: 0 },
         { id: 2, icon: "😊", votes: 0 },
@@ -13,14 +13,13 @@ const EmojiVoting = () => {
     const [showResults, setShowResults] = useState(false);
     const [winner, setWinner] = useState(null);
 
-    // Function to handle voting
+
     const handleVote = (id) => {
         setEmojis(emojis.map(emoji => 
             emoji.id === id ? { ...emoji, votes: emoji.votes + 1 } : emoji
         ));
     };
 
-    // Function to calculate the winner
     const calculateWinner = () => {
         const maxVotes = Math.max(...emojis.map(e => e.votes));
         const winningEmoji = emojis.find(e => e.votes === maxVotes);
